@@ -7,11 +7,11 @@ function Buttonpanel(props) {
         props.send(btnV);
     }
     return(
-        <div>
-            <button onClick={()=>{handleClick('all')}}>{butttonall}</button>
-            <button onClick={()=>{handleClick('lp')}}>{buttonlaptop}</button>
-            <button onClick={()=>{handleClick('tb')}}>{buttontablet}</button>
-            <button onClick={()=>{handleClick('mb')}}>{buttonmobile}</button>
+        <div className="button-main">
+            <button onClick={()=>{handleClick('all')}} className="custom-button">{butttonall}</button>
+            <button onClick={()=>{handleClick('lp')}} className="custom-button">{buttonlaptop}</button>
+            <button onClick={()=>{handleClick('tb')}} className="custom-button">{buttontablet}</button>
+            <button onClick={()=>{handleClick('mb')}} className="custom-button">{buttonmobile}</button>
         </div>
     )
 }
